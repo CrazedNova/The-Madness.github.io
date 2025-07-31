@@ -4,23 +4,51 @@
   <meta charset="UTF-8" />
   <title>Roblox Label Extension</title>
   <style>
-    body {
-      background-color: #2e0854;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #2e0854; /* Deep purple */
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
     }
 
-    .pfp {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      opacity: 0.5;
-      object-fit: cover;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-      margin-bottom: 30px;
+    .image-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 300px;
+      border-radius: 30px;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .background-image {
+      width: 100%;
+      height: 100%;
+      background-image: url('https://yt3.googleusercontent.com/8VqgoEUHs2RV_OEvkh2yd_JXO52lUlKIy_M7rryF7KKdU91qL6BNHqYf2sE8rkJX5IIKJTAK=s160-c-k-c0x00ffffff-no-rj');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+    }
+
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #2e0854;
+      opacity: 0.4;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 50px;
     }
 
     .button {
@@ -43,13 +71,18 @@
   </style>
 </head>
 <body>
-  <img src="https://cdn.discordapp.com/avatars/466812427674189824.png" alt="Profile" class="pfp" />
+  <div class="image-wrapper">
+    <div class="background-image"></div>
+    <div class="image-overlay"></div>
+  </div>
 
-  <h1>Roblox Label Extension</h1>
-  <p>Customize your Roblox experience.</p>
+  <div class="content">
+    <h1>Roblox Label Extension</h1>
+    <p>Customize your Roblox experience.</p>
 
-  <a href="privacy.html" class="button">Privacy Policy</a>
-  <a href="features.html" class="button">Features</a>
-  <a href="contact.html" class="button">Contact</a>
+    <a href="privacy.html" class="button">Privacy Policy</a>
+    <a href="features.html" class="button">Features</a>
+    <a href="contact.html" class="button">Contact</a>
+  </div>
 </body>
 </html>
