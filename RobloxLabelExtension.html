@@ -76,6 +76,17 @@
       transition: background-color 0.3s ease;
     }
 
+    .button-group {
+      margin-bottom: 20px; /* spacing between button groups */
+    }
+    
+    .back-home {
+      display: block;
+      width: 180px; /* same as button width or adjust */
+      margin: 0 auto; /* centers it horizontally */
+    }
+
+    
     .button:hover {
       background-color: #9b59b6;
     }
@@ -90,11 +101,16 @@
   <div class="content">
     <h1>ROBLOX LABEL EXTENSION</h1>
     <p>&gt; THE PLACE FOR ALL YOUR INFO NEEDS &lt;</p>
-
-    <a href="privacy.html" class="button">Privacy Policy</a>
-    <a href="features.html" class="button">Features</a>
-    <a href="contact.html" class="button">Contact</a>
+  
+    <div class="button-group">
+      <a href="privacy.html" class="button">Privacy Policy</a>
+      <a href="features.html" class="button">Features</a>
+      <a href="contact.html" class="button">Contact</a>
+    </div>
+  
+    <a href="index.html" class="button back-home">Back to Home</a>
   </div>
+
 
 </body>
 </html>
