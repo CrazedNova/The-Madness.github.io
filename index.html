@@ -4,51 +4,23 @@
   <meta charset="UTF-8" />
   <title>Roblox Label Extension</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #2e0854; /* Deep purple */
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-    }
-
-    .image-wrapper {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 500px;
-      height: 300px;
-      border-radius: 30px;
-      overflow: hidden;
-      z-index: 0;
-    }
-
-    .background-image {
-      width: 100%;
-      height: 100%;
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/1200px-Sunflower_sky_backdrop.jpg');
-      background-size: cover;
-      background-position: center;
-      opacity: 0.3;
-    }
-
-    .image-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    body {
       background-color: #2e0854;
-      opacity: 0.4;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
     }
 
-    .content {
-      position: relative;
-      z-index: 1;
-      padding: 50px;
+    .pfp {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      opacity: 0.5;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      margin-bottom: 30px;
     }
 
     .button {
@@ -71,18 +43,12 @@
   </style>
 </head>
 <body>
-  <div class="image-wrapper">
-    <div class="background-image"></div>
-    <div class="image-overlay"></div>
-  </div>
+  <img src="https://discordlookup.mesavirep.xyz/v1/avatar/466812427674189824" alt="Profile" class="pfp" />
+  <h1>Roblox Label Extension</h1>
+  <p>Customize your Roblox experience.</p>
 
-  <div class="content">
-    <h1>Roblox Label Extension</h1>
-    <p>Customize your Roblox experience.</p>
-
-    <a href="privacy.html" class="button">Privacy Policy</a>
-    <a href="features.html" class="button">Features</a>
-    <a href="contact.html" class="button">Contact</a>
-  </div>
+  <a href="privacy.html" class="button">Privacy Policy</a>
+  <a href="features.html" class="button">Features</a>
+  <a href="contact.html" class="button">Contact</a>
 </body>
 </html>
