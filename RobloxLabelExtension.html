@@ -82,13 +82,23 @@
     
     .back-home {
       display: block;
-      width: 140px;       /* smaller width */
-      margin: 0 auto;     /* center horizontally */
-      background-color: #007BFF; /* nice blue */
-      font-size: 16px;    /* smaller font */
-      padding: 10px 20px; /* smaller padding */
-      border-radius: 5px; /* keep the same rounding */
+      width: 140px;
+      margin: 20px auto 0; /* ↓ this reduces the top space */
+      background-color: #007BFF;
+      font-size: 16px;
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
     }
+    
+    .back-home:hover {
+      background-color: #FF0000; /* red on hover */
+    }
+    
 
     
     .button:hover {
